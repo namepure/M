@@ -755,7 +755,7 @@ def lineBot(op):
                 elif text.lower() == 'บอท':
                     try:
                         arr = []
-                        owner = "u1c5db91bd26c89037aa5af07d85a4d6a"
+                        owner = "u932a268262c0602c011a71c5ee2666b7"
                         creator = line.getContact(owner)
                         contact = line.getContact(lineMID)
                         grouplist = line.getGroupIdsJoined()
@@ -916,7 +916,7 @@ def lineBot(op):
                     line.sendContact(to, lineMID)
                 elif text.lower() == 'ผส':
                     sendMessageWithMention(to, lineMID)
-                    line.sendContact(to, "u1c5db91bd26c89037aa5af07d85a4d6a")
+                    line.sendContact(to, "u932a268262c0602c011a71c5ee2666b7")
                 elif text.lower() == 'มิด':
                     line.sendMessage(msg.to,"[MID]\n" +  lineMID)
                 elif text.lower() == 'ชื่อ':
@@ -3172,7 +3172,7 @@ def lineBot(op):
                     for ids in kontak:
                         msgs+="\n[%i] %s" % (num, ids.displayName)
                         num=(num+1)
-                    msgs+="\n🎎By.เอ็มBotSelf🎎\n\nTotal Teman : %i" % len(kontak)
+                    msgs+="\n🇹🇭⍣ᎢᎬᎪᎷᏴᎾᎢ⅌ᎷᎫ⍣🇹🇭\n\nTotal Teman : %i" % len(kontak)
                     line.sendMessage(msg.to, msgs)
 
                 elif msg.text in ["Blocklist"]: 
