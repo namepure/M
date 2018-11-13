@@ -9,35 +9,35 @@ from bs4 import BeautifulSoup
 from humanfriendly import format_timespan, format_size, format_number, format_length
 import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib.request, urllib.parse, urllib.error, urllib.parse
 from gtts import gTTS
-#import html5lib,shutil
-#import wikipedia,goslate
-#import youtube_dl, pafy, asyncio
+import html5lib,shutil
+import wikipedia,goslate
+import youtube_dl, pafy, asyncio
 from multiprocessing import Pool, Process
 from googletrans import Translator
 #==============================================================================#
 botStart = time.time()
 #==============================================================================#
-#line = LINE()
-#line = LINE("Email","Passwd")
+line = LINE()
+line = LINE("Email","Passwd")
 line = LINE('')
 line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 
-#ki = LINE()
-#ki.log("Auth Token : " + str(ki.authToken))
-#ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
+ki = LINE()
+ki.log("Auth Token : " + str(ki.authToken))
+ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
 
-#kk = LINE()
-#kk.log("Auth Token : " + str(kk.authToken))
-#kk.log("Timeline Token : " + str(kk.tl.channelAccessToken))
+kk = LINE()
+kk.log("Auth Token : " + str(kk.authToken))
+kk.log("Timeline Token : " + str(kk.tl.channelAccessToken))
 
-#kc = LINE()
-#kc.log("Auth Token : " + str(kc.authToken))
-#kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
+kc = LINE()
+kc.log("Auth Token : " + str(kc.authToken))
+kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
 
-#ks = LINE()
-#ks.log("Auth Token : " + str(ks.authToken))
-#ks.log("Timeline Token : " + str(ks.tl.channelAccessToken))
+ks = LINE()
+ks.log("Auth Token : " + str(ks.authToken))
+ks.log("Timeline Token : " + str(ks.tl.channelAccessToken))
 print ("Login Succes")
 
 lineMID = line.profile.mid
@@ -636,7 +636,7 @@ def lineBot(op):
                     line.sendMessage(to, "████▒... 40.0%")
                     line.sendMessage(to, "█████▒... 50.0%")
                     line.sendMessage(to, "██████▒... 60.0%")
-                    line.sendMessage(to, "██████▒... 70.0%")
+                    line.sendMessage(to, "███████▒... 70.0%")
                     line.sendMessage(to, "████████▒... 80.0%")
                     line.sendMessage(to, "█████████▒... 90.0%")
                     line.sendMessage(to, "███████████..100.0%")
