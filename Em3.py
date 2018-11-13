@@ -17,8 +17,8 @@ from googletrans import Translator
 #==============================================================================#
 botStart = time.time()
 #==============================================================================#
-line = LINE()
-line = LINE("Email","Passwd")
+#line = LINE()
+#line = LINE("Email","Passwd")
 line = LINE('')
 line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
@@ -323,7 +323,7 @@ def socmedia():
     
 def helpset():
     helpSet = """🎃คำสั่ง⍣ᎢᎬᎪᎷᏴᎾᎢ⅌ᎷᎫ⍣🎃
-🏀 เจ  ➠ คอนแทคเจ
+🏀 me  ➠ คอนแทคเจ
 🏀 มิด  ➠ MID เรา
 🏀 ชื่อ  ➠ ชื่อเรา
 🏀 ตัส  ➠ สถานะเรา
@@ -335,7 +335,7 @@ def helpset():
 ⚽ เทส  ➠ ทดสอบบอท
 ⚽ เปิดหมด ➠ เปิดฟั่งชั่น
 ⚽ ปิดหมด  ➠ ปิดฟังชั่ง
-⚽ สปีด  ➠ ทดสอบความเร็ว
+⚽ sp  ➠ ทดสอบความเร็ว
 ⚽ โทร  ➠ เชิญโทร
 ⚽ .โทร  5 ➠ เชิญโทร
 ⚽ ดูเวลา ➠ เช็ควันเวลา
@@ -738,7 +738,7 @@ def lineBot(op):
                             kk.leaveGroup(to)
                         except:
                             pass
-                elif text.lower() == 'สปีด':
+                elif text.lower() == 'sp':
                     start = time.time()
                     line.sendMessage(to,"ความเร็วของ 🇹🇭⍣ᎢᎬᎪᎷᏴᎾᎢ⅌ᎷᎫ⍣🇹🇭...")
                     elapsed_time = time.time() - start
@@ -774,7 +774,7 @@ def lineBot(op):
                     except Exception as e:
                         line.sendMessage(msg.to, str(e))
 #==============================================================================#
-                elif text.lower() == 'สถานะ':
+                elif text.lower() == 'เชคค่า':
                     try:
                         ret_ = "╔════[  สถานะ 🇹🇭⍣ᎢᎬᎪᎷᏴᎾᎢ⅌ᎷᎫ⍣🇹🇭 ]═════┓"
                         if settings["บอททำงานปกติครับ"] == True: ret_ += "\n╠❂☞ รับบล็อคออโต้ ✔"
@@ -911,7 +911,7 @@ def lineBot(op):
                      line.sendMessage(to, "👍ส่งรูปมา👎")      
 #==============================================================================#
 
-                elif text.lower() == 'เจ':
+                elif text.lower() == 'me':
                     sendMessageWithMention(to, lineMID)
                     line.sendContact(to, lineMID)
                 elif text.lower() == 'ผส':
@@ -1149,7 +1149,7 @@ def lineBot(op):
                         gPending = str(len(group.invitee))
                     if group.preventedJoinByTicket == True:
                         gQr = "ปิด"
-                        gTicket = "ไม่พบข้อมูล"
+                        gTicket = "🇹🇭⍣ᎢᎬᎪᎷᏴᎾᎢ⅌ᎷᎫ⍣🇹🇭"
                     else:
                         gQr = "Terbuka"
                         gTicket = "https://line.me/R/ti/g/{}".format(str(line.reissueGroupTicket(group.id)))
