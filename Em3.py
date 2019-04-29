@@ -595,7 +595,7 @@ def lineBot(op):
                     tts = gTTS(text=say, lang=lang)
                     tts.save("hasil.mp3")
                     line.sendAudio(msg.to,"hasil.mp3")
-                elif "ชื่อกลุ่ม " in msg.text:
+ปิดเคนะอย่าเสือกเอาไปใช้                elif "ชื่อกลุ่ม " in msg.text:
                     if msg.toType == 2:
                         X = line.getGroup(msg.to)
                         X.name = msg.text.replace("ชื่อกลุ่ม ","")
