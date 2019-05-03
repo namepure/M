@@ -213,8 +213,8 @@ def summon(to, nama):
       akh = akh + 2
       aa += """{"S":"""+json.dumps(str(strt))+""","E":"""+json.dumps(str(akh))+""","M":"""+json.dumps(mm)+"},"""
       strt = strt + 6
-       akh = akh + 4
-       bb += "\xe2\x95\xa0 @x \n"
+      akh = akh + 4
+      bb += "\xe2\x95\xa0 @x \n"
     aa = (aa[:int(len(aa)-1)])
     msg = Message()
     msg.to = to
@@ -595,7 +595,7 @@ def lineBot(op):
                     tts = gTTS(text=say, lang=lang)
                     tts.save("hasil.mp3")
                     line.sendAudio(msg.to,"hasil.mp3")
-ปิดเคนะอย่าเสือกเอาไปใช้                elif "ชื่อกลุ่ม " in msg.text:
+                elif "ชื่อกลุ่ม " in msg.text:
                     if msg.toType == 2:
                         X = line.getGroup(msg.to)
                         X.name = msg.text.replace("ชื่อกลุ่ม ","")
